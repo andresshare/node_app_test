@@ -1,10 +1,13 @@
-var express = ('require')
+var pug = require('pug')
+var express = require('express')
 var app = express();
 
 
-app.get("/",function (req,resp) {
-    res.send("hi")
-    resizeBy.end()
+app.set("view engine","pug")
+
+app.get("/",function (req,res) {
+    res.render("index.pug",{hola:"Text of sms"})
+    res.end()
 })
 
-app.listen(8080, 'localhost')
+app.listen(8080,'localhost')

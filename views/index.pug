@@ -1,0 +1,14 @@
+doctype html 
+html(lang='es') 
+    head
+        meta(charset='utf-8')
+        tittle Test
+        link(rel='stylesheet', type='text/css' href='css/estilo.css')
+        script(src='libjs/jquery.min.js')
+        script(src='libjs/archivo.js')
+    body
+    h1!= hi
+       
+        - for (var i = 0; i < 10; i++) {
+                 =  i
+        - }      
